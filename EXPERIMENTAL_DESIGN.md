@@ -3,7 +3,7 @@
 > **Gate:** 0.5 (must pass before Phase 1 compute)
 > **Date:** 2026-03-19
 > **Target venue:** AISec Workshop (ACM CCS 2026) — Tier 2
-> **lock_commit:** TO BE SET after review, before Phase 1
+> **lock_commit:** `3b43d29`
 > **Profile:** simulation-track (real agent validation via API)
 > **Designed for:** 8/10 from day 1 (Gate 0.5 + R34 depth escalation)
 > **Budget:** ~$10-15 Claude Haiku API

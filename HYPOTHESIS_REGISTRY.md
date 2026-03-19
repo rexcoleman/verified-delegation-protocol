@@ -3,7 +3,7 @@
 > **Project:** FP-16 (Verified Delegation Protocol for Multi-Agent Systems)
 > **Created:** 2026-03-19
 > **Status:** Pre-registered (7/7 hypotheses locked before Phase 1)
-> **Lock commit:** TO BE SET
+> **Lock commit:** `3b43d29`
 > **Lock date:** 2026-03-19
 
 > **Temporal gate (LL-74):** All hypotheses committed and locked before any experimental results are generated.
@@ -19,7 +19,7 @@
 | **Falsification** | If poison_rate(verified) > 0.3 * poison_rate(implicit), H-1 is refuted. |
 | **Status** | PENDING |
 | **Linked Experiment** | E1 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -32,7 +32,7 @@
 | **Falsification** | If delta < 0.20, the protocol doesn't sufficiently improve over FP-15. |
 | **Status** | PENDING |
 | **Linked Experiment** | E1 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -45,7 +45,7 @@
 | **Falsification** | If cross-model ≥ same-model, the architectural insight about model asymmetry is wrong. |
 | **Status** | PENDING |
 | **Linked Experiment** | E2 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -58,7 +58,7 @@
 | **Falsification** | If recovery > 50%, the protocol is brittle against adaptive adversaries. |
 | **Status** | PENDING |
 | **Linked Experiment** | E3 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -71,7 +71,7 @@
 | **Falsification** | If poison rate degrades by >10pp OR latency scales ≥ linearly, protocol doesn't scale. |
 | **Status** | PENDING |
 | **Linked Experiment** | E4 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -84,7 +84,7 @@
 | **Falsification** | If signing alone reduces poison by >5pp, identity verification has more value than FP-15 suggested. |
 | **Status** | PENDING |
 | **Linked Experiment** | E5 (ablation) |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
@@ -97,7 +97,7 @@
 | **Falsification** | If delta > 15pp, the FP-15 simulation model is not predictive of real agent behavior. |
 | **Status** | PENDING |
 | **Linked Experiment** | E6 |
-| **lock_commit** | `PENDING` |
+| **lock_commit** | `3b43d29` |
 
 ---
 
