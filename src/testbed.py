@@ -100,9 +100,11 @@ class Testbed:
         self.delegation_graph = self._build_graph(topology, n_agents)
 
         # Create defense protocol
+        judge_mode = "api" if agent_mode == "api" and judge_model else "mock"
         self.protocol = create_defense(
             defense_type, rng=self.rng,
             judge_model=judge_model,
+            judge_mode=judge_mode,
         )
 
     def _build_graph(self, topology: str, n: int) -> dict:
