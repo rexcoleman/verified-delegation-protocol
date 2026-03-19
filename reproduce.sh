@@ -29,3 +29,6 @@ wait $EXPID
 echo "Experiments done. Results in outputs/experiments/"
 
 echo "=== DONE: $(date) ==="
+
+echo "--- Gate Validation (R50) ---"
+bash ~/ml-governance-templates/scripts/check_all_gates.sh .
