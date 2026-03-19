@@ -1,15 +1,11 @@
 # Substack Email Intro
 
-> Paste BEFORE the full blog post in Substack editor.
-
 ---
 
-Last week I showed that multi-agent AI systems have a 97% poison rate under default trust — and that zero-trust only cuts it by 40%.
+I designed a defense for multi-agent AI systems. Pre-registered 7 hypotheses. Built the protocol. Ran experiments on real Claude agents.
 
-This week: the defense.
+Five hypotheses were refuted. The defense doesn't work. And the simulation that motivated the entire project was wrong by 48 percentage points.
 
-A verified delegation protocol combining cross-model LLM-as-judge verification, cryptographic signing, and adaptive rate limiting. The key insight: defending with a DIFFERENT model than the agents creates a structural advantage that same-model defense doesn't have.
+This is the most important thing I've published — not because it succeeded, but because it failed honestly. Every refutation narrows the solution space for anyone building secure multi-agent systems.
 
-7 hypotheses pre-registered before any experiments. 1 expected null result. This is what it looks like when you design research for rigor from day 1.
-
-Read on for the protocol design, the ablation plan, and why identity matters less than output quality for agent trust.
+Read on for why LLM-as-judge makes things worse, why a judge-aware adversary achieves 100% compromise, and why the simplest defense worked best.

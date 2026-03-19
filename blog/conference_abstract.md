@@ -1,17 +1,16 @@
 # Conference Abstract — AISec Workshop (ACM CCS 2026)
 
-> **Title:** Verified Delegation: Cross-Model LLM-as-Judge Closes the Adaptive Adversary Gap in Multi-Agent Systems
+> **Title:** Verified Delegation Fails: Real LLM Agents Resist Cascade Differently Than Simulations Predict
 > **Speaker:** Rex Coleman
 > **Track:** AI Security / Multi-Agent Defense
-> **Length:** 20-30 minutes
 
 ## Abstract
 
-Multi-agent AI systems under implicit trust cascade to 100% compromise from a single compromised agent. Static zero-trust reduces poison rate by 40%, but adaptive adversaries recover 54% of the advantage (FP-15, Coleman 2026). We propose a verified delegation protocol combining three defense layers: (1) cross-model LLM-as-judge semantic verification, where a structurally different model evaluates each delegated output, exploiting the fact that model-specific blind spots differ; (2) cryptographic task signing preventing delegation forgery; and (3) adaptive rate limiting that escalates verification on anomaly detection.
+We propose a verified delegation protocol combining LLM-as-judge semantic verification, cryptographic task signing, and adaptive rate limiting for multi-agent systems, and pre-register 7 hypotheses predicting ≥70% cascade poison reduction. Real Claude Haiku agent experiments refute 5 of 7 hypotheses.
 
-We validate against 4 baselines (no defense, static zero-trust, input filtering, oracle) with 7 pre-registered hypotheses across real Claude agents (Haiku agents, Sonnet judge). Key expected results: (1) verified delegation reduces poison rate by ≥70% vs implicit trust, beating static zero-trust by ≥20pp; (2) cross-model judge outperforms same-model judge due to model-asymmetric blind spots; (3) adaptive adversaries recover ≤50% of the protocol's advantage (vs 54% against static zero-trust); (4) signing alone is a null result — identity verification doesn't prevent output poisoning, confirming FP-15's credential theft finding.
+Key findings: (1) The protocol provides no meaningful defense — verified delegation achieves 0.500 poison rate vs 0.494 baseline (no improvement). (2) The LLM-as-judge component actively HURTS performance (+3pp poison) due to false positives outweighing true positives. (3) A judge-aware adversary achieves 100% poison, defeating every defense. (4) Cascade simulations overestimate poison by 48pp (97% simulated vs 49% real) because real agents have inherent semantic resistance. (5) Rate limiting — the simplest component — provides the most benefit (-6pp).
 
-We release the protocol as open source with mock mode (17 tests, no API key needed) and API mode (~$10-15 for full experiment suite). Designed for 8/10 using govML Gate 0.5 + R34 depth escalation from day 1.
+These negative results narrow the solution space: LLM-as-judge is not viable for delegation verification against semantically plausible attacks; cascade simulations require LLM-specific resistance modeling; and behavioral defenses (rate limiting) outperform semantic defenses (content verification) for multi-agent cascade.
 
 ## Bio (100 words)
 

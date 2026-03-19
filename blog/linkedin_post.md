@@ -1,33 +1,32 @@
-# LinkedIn Post — Verified Delegation Protocol
+# LinkedIn Post — Verified Delegation Results
 
-> Paste as native LinkedIn text. Blog link as FIRST COMMENT.
-
----
-
-My last project (FP-15) found that zero-trust cuts multi-agent cascade poison by 40% — but adaptive adversaries recover 54% of that advantage.
-
-So I built the defense.
-
-Verified Delegation Protocol — three layers:
-
-1. LLM-as-judge: a DIFFERENT model verifies every delegated output. Model-specific blind spots differ, so an attacker who fools the agent model doesn't automatically fool the judge.
-
-2. Cryptographic signing: HMAC prevents delegation forgery. (Though FP-15 showed identity matters less than output quality — signing is the weakest layer.)
-
-3. Adaptive rate limiting: when anomalies are detected, verification frequency escalates automatically.
-
-The key insight: defending LLMs with a DIFFERENT LLM creates a structural advantage that same-model defense doesn't have. Cross-model verification is the architectural defense.
-
-7 pre-registered hypotheses. 1 expected null result (signing alone doesn't help). 4 comparison baselines. 5-component ablation.
-
-Built with govML Gate 0.5 — every hypothesis, baseline, and kill shot was designed before writing a single line of experiment code.
-
-Framework is open source. Mock mode runs without API key. Real agent experiments coming soon (~$10 in Claude Haiku API).
-
-#AISecurity #MultiAgent #ZeroTrust #DefenseInDepth #BuildInPublic
+> Blog link as FIRST COMMENT.
 
 ---
 
-> First comment: "Full write-up: [blog URL]"
-> Second comment: "Code: github.com/rexcoleman/verified-delegation-protocol"
-> Third comment: "Attack model: github.com/rexcoleman/multi-agent-security"
+I built a 3-layer defense for multi-agent AI systems and pre-registered 7 hypotheses predicting 70% poison reduction.
+
+Real agent experiments refuted 5 of 7. The defense doesn't work.
+
+Here's what actually happened:
+
+Our simulation predicted 97% poison rate. Real Claude agents: 49%. The simulation was wrong by 48 percentage points.
+
+The LLM-as-judge component makes things WORSE — false positives blocking legitimate outputs outweigh true positives catching attacks.
+
+A judge-aware adversary achieves 100% poison. If the attacker knows your defense exists, it's already defeated.
+
+The dumbest component — rate limiting, no semantic understanding — worked best (-6pp).
+
+These negative results matter more than a positive one would have:
+
+1. LLM-as-judge is not viable for delegation verification
+2. Cascade simulations don't predict real agent behavior
+3. Real LLMs have inherent resistance that simulations miss
+4. Rate limiting > semantic verification for cascade defense
+
+5 pre-registered hypotheses, honestly refuted. That's what designing for rigor from day 1 looks like.
+
+Framework is open source.
+
+#AISecurity #NegativeResults #MultiAgent #HonestResearch #BuildInPublic
