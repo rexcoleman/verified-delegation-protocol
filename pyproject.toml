@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "verified-delegation-protocol"
+version = "0.1.0"
+description = "FP-16: Verified Delegation Protocol for Multi-Agent Systems"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+api = ["anthropic>=0.30"]
+figures = ["matplotlib>=3.7", "seaborn>=0.12"]
+dev = ["pytest>=7.0"]
