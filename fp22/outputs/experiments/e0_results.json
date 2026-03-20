@@ -1,0 +1,52 @@
+{
+  "e0a": {
+    "score": 10,
+    "gate_0_pass": true,
+    "pass": true,
+    "details": {
+      "task_id": "task_a",
+      "governance_level": "full",
+      "seed": 42,
+      "structural_completeness": 2,
+      "statistical_rigor": 2,
+      "honest_reporting": 2,
+      "content_quality": 2,
+      "governance_compliance": 2,
+      "total_score": 10,
+      "gate_0_pass": true,
+      "failure_point": "COMPLETE (all gates passed)",
+      "notes": ""
+    }
+  },
+  "e0b": {
+    "score": 0,
+    "gate_0_pass": false,
+    "pass": true,
+    "details": {
+      "task_id": "garbage",
+      "governance_level": "full",
+      "seed": 0,
+      "structural_completeness": 0,
+      "statistical_rigor": 0,
+      "honest_reporting": 0,
+      "content_quality": 0,
+      "governance_compliance": 0,
+      "total_score": 0,
+      "gate_0_pass": false,
+      "failure_point": "Gate 0: Problem Definition",
+      "notes": ""
+    }
+  },
+  "e0c": {
+    "scores": {
+      "none": 6,
+      "partial": 8,
+      "full": 10
+    },
+    "monotonic": true,
+    "pass": true
+  },
+  "overall": {
+    "pass": true
+  }
+}

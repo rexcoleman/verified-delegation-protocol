@@ -1,0 +1,44 @@
+{
+  "failure_counts": {
+    "Gate 0: Problem Definition": 15,
+    "Gate 4: Content Quality": 7,
+    "COMPLETE (all gates passed)": 10,
+    "Gate 3: Honest Reporting": 6,
+    "Gate 2: Statistical Rigor": 7
+  },
+  "failure_by_condition": {
+    "task_a_none": {
+      "Gate 0: Problem Definition": 5
+    },
+    "task_a_partial": {
+      "Gate 4: Content Quality": 5
+    },
+    "task_a_full": {
+      "COMPLETE (all gates passed)": 5
+    },
+    "task_b_none": {
+      "Gate 0: Problem Definition": 5
+    },
+    "task_b_partial": {
+      "Gate 3: Honest Reporting": 3,
+      "Gate 2: Statistical Rigor": 2
+    },
+    "task_b_full": {
+      "COMPLETE (all gates passed)": 4,
+      "Gate 3: Honest Reporting": 1
+    },
+    "task_c_none": {
+      "Gate 0: Problem Definition": 5
+    },
+    "task_c_partial": {
+      "Gate 4: Content Quality": 2,
+      "Gate 2: Statistical Rigor": 2,
+      "Gate 3: Honest Reporting": 1
+    },
+    "task_c_full": {
+      "Gate 2: Statistical Rigor": 3,
+      "Gate 3: Honest Reporting": 1,
+      "COMPLETE (all gates passed)": 1
+    }
+  }
+}

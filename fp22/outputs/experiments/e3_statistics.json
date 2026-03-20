@@ -1,0 +1,210 @@
+{
+  "descriptive": {
+    "none": {
+      "n": 15,
+      "mean": 5.47,
+      "sd": 0.92,
+      "min": 4,
+      "max": 6,
+      "scores": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        6,
+        4,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    "partial": {
+      "n": 15,
+      "mean": 6.8,
+      "sd": 1.26,
+      "min": 4,
+      "max": 8,
+      "scores": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        6,
+        6,
+        4,
+        6,
+        6,
+        8,
+        6,
+        6,
+        8,
+        6
+      ]
+    },
+    "full": {
+      "n": 15,
+      "mean": 8.93,
+      "sd": 1.67,
+      "min": 6,
+      "max": 10,
+      "scores": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        10,
+        10,
+        10,
+        6,
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    "task_a": {
+      "n": 15,
+      "mean": 8.0,
+      "sd": 1.69,
+      "min": 6,
+      "max": 10
+    },
+    "task_b": {
+      "n": 15,
+      "mean": 6.4,
+      "sd": 2.41,
+      "min": 4,
+      "max": 10
+    },
+    "task_c": {
+      "n": 15,
+      "mean": 6.8,
+      "sd": 1.26,
+      "min": 6,
+      "max": 10
+    }
+  },
+  "gate_0_rates": {
+    "none": 0.0,
+    "partial": 1.0,
+    "full": 1.0
+  },
+  "effects": {
+    "full_vs_none": {
+      "mean_difference": 3.47,
+      "cohens_d": 2.58,
+      "interpretation": "large"
+    },
+    "bootstrap_ci_95": {
+      "lower": 2.53,
+      "upper": 4.4
+    },
+    "eta_squared": {
+      "governance_level": 0.557,
+      "task_complexity": 0.126,
+      "stronger_predictor": "governance_level"
+    }
+  },
+  "cell_stats": {
+    "task_a_full": {
+      "mean": 10.0,
+      "scores": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    "task_a_none": {
+      "mean": 6.0,
+      "scores": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    "task_a_partial": {
+      "mean": 8.0,
+      "scores": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "task_b_full": {
+      "mean": 9.2,
+      "scores": [
+        10,
+        6,
+        10,
+        10,
+        10
+      ]
+    },
+    "task_b_none": {
+      "mean": 4.4,
+      "scores": [
+        4,
+        4,
+        4,
+        6,
+        4
+      ]
+    },
+    "task_b_partial": {
+      "mean": 5.6,
+      "scores": [
+        6,
+        6,
+        4,
+        6,
+        6
+      ]
+    },
+    "task_c_full": {
+      "mean": 7.6,
+      "scores": [
+        6,
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    "task_c_none": {
+      "mean": 6.0,
+      "scores": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    "task_c_partial": {
+      "mean": 6.8,
+      "scores": [
+        8,
+        6,
+        6,
+        8,
+        6
+      ]
+    }
+  }
+}
