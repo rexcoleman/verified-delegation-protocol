@@ -202,6 +202,16 @@ We contribute:
 | 7 | Parameter sensitivity sweep planned | [x] | 3 parameters |
 | 8 | Simulation-to-real validation planned | [x] | 3 FP-15 findings to validate |
 
+### Threats to Validity (D1)
+
+| Threat | Type | Mitigation |
+|--------|------|-----------|
+| Delegation protocol tested against known attack patterns only — novel attacks may bypass | External validity | E3 (Adaptive Adversary) tests 3 adversary scenarios including one that knows the defense. Acknowledged that zero-day delegation attacks are not covered. |
+| Mock delegation vs real multi-agent system | Construct validity | Simulation-to-real validation plan (§10.8) specifically addresses this. 3 FP-15 findings validated against real agent calls. |
+| Single protocol design — no comparison to alternative delegation schemes | External validity | Published baseline reproduction (Rebuff, LLM Guard) provides comparison. Alternative delegation protocols (capability-based, attribute-based) are future work. |
+| 5 seeds × limited conditions — effect sizes may not replicate | Statistical validity | Primary claim (≥30pp improvement) is large effect. Power analysis shows 5 seeds sufficient for this effect size. Sensitivity sweep covers 3 parameters. |
+| Confounded: protocol complexity correlates with security — more complex may appear more secure because attackers haven't adapted | Internal validity | E3 adaptive adversary specifically tests attacker adaptation. Protocol complexity is measured and reported as a cost metric alongside security improvement. |
+
 ---
 
 ## 11) Phase 1 Exit Checkpoint (Mid-Execution Verification)
