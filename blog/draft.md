@@ -83,7 +83,7 @@ Every refutation tells future researchers what NOT to build. That's worth more t
 
 ## The Simulation-to-Real Gap
 
-This is arguably the most important finding for the multi-agent security community:
+The simulation-to-real gap matters most for practitioners:
 
 | Metric | Simulation | Real Agents | Gap |
 |--------|-----------------|-------------------|-----|

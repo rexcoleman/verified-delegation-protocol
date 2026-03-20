@@ -18,14 +18,14 @@ A judge-aware adversary achieves 100% poison. If the attacker knows your defense
 
 The dumbest component — rate limiting, no semantic understanding — worked best (-6pp).
 
-These negative results matter more than a positive one would have:
+What the refutations narrow down:
 
 1. LLM-as-judge is not viable for delegation verification
 2. Cascade simulations don't predict real agent behavior
 3. Real LLMs have inherent resistance that simulations miss
 4. Rate limiting > semantic verification for cascade defense
 
-5 pre-registered hypotheses, honestly refuted. That's what designing for rigor from day 1 looks like.
+7 pre-registered hypotheses, 5 honestly refuted. That's what designing for rigor from day 1 looks like.
 
 Framework is open source.
 
