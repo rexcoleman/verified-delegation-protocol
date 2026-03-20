@@ -1,3 +1,12 @@
+---
+project: "Verified Delegation Fails: Real LLM Agents Resist Cascade Differently Than Simul"
+fp: "FP-16"
+status: COMPLETE
+quality_score: 8.0
+last_scored: 2026-03-20
+profile: security-ml
+---
+
 # Verified Delegation Fails: Real LLM Agents Resist Cascade Differently Than Simulations Predict
 
 > **Status:** EXPERIMENTS COMPLETE — 3 experiments on real Claude Haiku agents, 3 seeds, 17 tests

@@ -30,5 +30,10 @@ echo "Experiments done. Results in outputs/experiments/"
 
 echo "=== DONE: $(date) ==="
 
-echo "--- Gate Validation (R50) ---"
-bash ~/ml-governance-templates/scripts/check_all_gates.sh .
+# --- Gate Validation (R50) ---
+if [ -f "$HOME/ml-governance-templates/scripts/check_all_gates.sh" ]; then
+    echo "--- Gate Validation (R50) ---"
+    bash "$HOME/ml-governance-templates/scripts/check_all_gates.sh" .
+else
+    echo "WARN: govML not found — skipping gate validation (R50)"
+fi
