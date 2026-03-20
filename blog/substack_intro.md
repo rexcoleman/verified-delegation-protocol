@@ -2,6 +2,8 @@
 
 ---
 
+**Subject line:** I designed a multi-agent defense. 5 of 7 hypotheses were refuted.
+
 I designed a defense for multi-agent AI systems. Pre-registered 7 hypotheses. Built the protocol. Ran experiments on real Claude agents.
 
 Five hypotheses were refuted. The defense doesn't work. And the simulation that motivated the entire project was wrong by 48 percentage points.

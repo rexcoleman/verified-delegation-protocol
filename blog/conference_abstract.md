@@ -6,11 +6,11 @@
 
 ## Abstract
 
-We propose a verified delegation protocol combining LLM-as-judge semantic verification, cryptographic task signing, and adaptive rate limiting for multi-agent systems, and pre-register 7 hypotheses predicting ≥70% cascade poison reduction. Real Claude Haiku agent experiments refute 5 of 7 hypotheses.
+Multi-agent AI systems need defense against cascade poisoning, but which defense components actually work? We designed a verified delegation protocol combining LLM-as-judge semantic verification, cryptographic task signing, and adaptive rate limiting — and pre-registered 7 hypotheses predicting at least 70% cascade poison reduction.
 
-Key findings: (1) The protocol provides no meaningful defense — verified delegation achieves 0.500 poison rate vs 0.494 baseline (no improvement). (2) The LLM-as-judge component actively HURTS performance (+3pp poison) due to false positives outweighing true positives. (3) A judge-aware adversary achieves 100% poison, defeating every defense. (4) Cascade simulations overestimate poison by 48pp (97% simulated vs 49% real) because real agents have inherent semantic resistance. (5) Rate limiting — the simplest component — provides the most benefit (-6pp).
+Real Claude Haiku agent experiments refute 5 of 7 hypotheses. The protocol provides no meaningful defense (0.500 poison rate vs 0.494 baseline). LLM-as-judge actively hurts performance (+3pp poison). A judge-aware adversary achieves 100% poison. Cascade simulations overestimate poison by 48pp because real agents have inherent semantic resistance. Rate limiting — the simplest component — provides the most benefit (-6pp).
 
-These negative results narrow the solution space: LLM-as-judge is not viable for delegation verification against semantically plausible attacks; cascade simulations require LLM-specific resistance modeling; and behavioral defenses (rate limiting) outperform semantic defenses (content verification) for multi-agent cascade.
+Attendees will leave knowing which multi-agent defense components fail empirically, why LLM-as-judge is not viable for delegation verification, and why behavioral defenses outperform semantic defenses for cascade containment.
 
 ## Bio (100 words)
 

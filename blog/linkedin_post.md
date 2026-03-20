@@ -29,4 +29,6 @@ What the refutations narrow down:
 
 Framework is open source.
 
+What multi-agent defense approach is your team exploring?
+
 #AISecurity #NegativeResults #MultiAgent #HonestResearch #BuildInPublic
