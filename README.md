@@ -1,10 +1,10 @@
 # FP-16: Verified Delegation Protocol for Multi-Agent Systems
 
-A defense-in-depth protocol for securing multi-agent AI systems against cascade compromise. Combines LLM-as-judge semantic verification, cryptographic task signing, and adaptive rate limiting.
+We proposed a 3-layer defense (LLM-as-judge + cryptographic signing + adaptive rate limiting) and pre-registered 7 hypotheses predicting it would cut cascade poison by 70%. Five hypotheses were refuted. The protocol doesn't work — and that's the finding. Rate limiting (-6pp) was the only effective component. The LLM-as-judge actually made things worse (+3pp).
 
-## Why This Exists
+**Blog post:** [We Built a Multi-Agent Defense and It Failed](https://rexcoleman.dev/posts/verified-delegation-protocol/)
 
-FP-15 showed that under implicit trust, a single compromised agent cascades to 100% of a multi-agent system. Zero-trust cuts poison rate by 40%, but adaptive adversaries recover 54%. **This project proposes and validates a defense that closes that gap.**
+## The Protocol
 
 ## The Protocol
 
