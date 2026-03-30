@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+type: software
+title: "Verified Delegation Fails: Real LLM Agents Resist Cascade Differently Than Simulations Predict"
+authors:
+  - family-names: Coleman
+    given-names: Rex
+abstract: "Verified Delegation Fails: Real LLM Agents Resist Cascade Differently Than Simulations Predict"
+date-released: "2026-03-20"
+url: "https://github.com/rexcoleman/verified-delegation-protocol"
+repository-code: "https://github.com/rexcoleman/verified-delegation-protocol"
+license: MIT
+keywords:
+  - "ai-agents"
+  - "cascade-attacks"
+  - "large-language-models"
+  - "reproducible-research"
+  - "security-ml"
