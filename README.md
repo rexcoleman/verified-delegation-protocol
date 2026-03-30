@@ -6,7 +6,7 @@
 
 ![govML](https://img.shields.io/badge/govML-v3.3-blue) ![Quality](https://img.shields.io/badge/quality-8.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
 
-![Key Result](figures/heatmap_task_governance.png)
+![Key Result](docs/images/heatmap_task_governance.png)
 
 ## Key Results
 
